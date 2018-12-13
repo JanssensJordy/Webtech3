@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="UTF-8">
+  <title>Products</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+  <h1>All products</h1>
+ <br><br>
+  <ul class="product">
+  &lt;% for(var i=0; i &lt; products.length; i++) {%&gt;
+    <li class="product">
+      <span><b>Name : </b>&lt;%= products[i].name %&gt;</span><br>
+      <span><b>Description : </b>&lt;%= products[i].description %&gt;</span><br>
+      <span><b>Price : </b>&lt;%= products[i].price %&gt;</span><br>
+    </li>
+  &lt;% } %&gt;
+  </ul>
+<br>
+
+<a href="/add">Add product</a>&nbsp;&nbsp;<a href="/search">Search product</a>
+
+
+
+</body></html>
